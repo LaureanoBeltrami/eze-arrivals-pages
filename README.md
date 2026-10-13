@@ -1,9 +1,8 @@
 # EZE International Arrivals — GitHub Pages
 
 Static FIDS board for EZE international arrivals. It is independent from the
-legacy application and only contains a React/Vite frontend, the isolated TAMS
-synchronizer, a manually dispatched Pages workflow, and a scheduled data-sync
-workflow.
+legacy application and includes a Netlify central synchronizer: one scheduled
+server-side refresh shared by every visitor.
 
 The committed `public/data/arrivals.json` is deliberately an empty example.
 It contains no flight data and permits the board to build safely before the
@@ -26,11 +25,10 @@ been configured in GitHub Pages.
 
 1. In the GitHub repository, select **Settings → Pages → Source: GitHub Actions**.
 2. Run **Deploy GitHub Pages** manually to publish the reviewed frontend.
-3. **Synchronize TAMS snapshot to data branch** runs every five minutes at
-   minutes 2, 7, 12 through 57 UTC, and can also be dispatched manually. It
-   writes only `public/data/arrivals.json` on the
-   independent `data` branch, avoids force pushes, and retains the last valid
-   snapshot when validation or the provider fails.
+3. On Netlify, **refresh-arrivals** runs every five minutes. It validates the
+   two TAMS windows, stores one shared snapshot in Netlify Blobs, and preserves
+   the last valid flights if the provider fails. **arrivals** exposes that saved
+   snapshot to every visitor; it never contacts TAMS.
 
 Pages reads the public `data` branch by default. To use a different public,
 CORS-enabled JSON endpoint, configure the repository Actions variable
@@ -40,10 +38,8 @@ CORS-enabled JSON endpoint, configure the repository Actions variable
 ARRIVALS_JSON_URL=https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json
 ```
 
-The browser never contacts TAMS. It revalidates the published JSON every 45
-seconds and uses its successful-sync timestamp to determine freshness. GitHub
-Raw is a cacheable delivery endpoint, not a fixed-freshness guarantee; see
-`docs/github-pages-data.md` before enabling automated updates.
+The browser never contacts TAMS. It revalidates the shared snapshot every 45
+seconds and uses its successful-sync timestamp to determine freshness.
 
 ## First publication (when authorized)
 

@@ -34,3 +34,17 @@ test("Pages workflow remains manual and builds the project URL", async () => {
     assert.match(workflow, /actions\/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346/);
     assert.doesNotMatch(workflow, /secrets\./i);
 });
+
+test("Netlify uses one scheduled server refresh and a shared snapshot endpoint", async () => {
+    const [config, refresher, reader] = await Promise.all([
+        readFile(new URL("../../netlify.toml", import.meta.url), "utf8"),
+        readFile(new URL("../../netlify/functions/refresh-arrivals.mjs", import.meta.url), "utf8"),
+        readFile(new URL("../../netlify/functions/arrivals.mjs", import.meta.url), "utf8"),
+    ]);
+    assert.match(config, /VITE_ARRIVALS_JSON_URL=\/.netlify\/functions\/arrivals/);
+    assert.match(refresher, /schedule: "\*\/5 \* \* \* \*"/);
+    assert.match(refresher, /createTamsSnapshot/);
+    assert.match(refresher, /setJSON\("current"/);
+    assert.match(reader, /get\("current"/);
+    assert.doesNotMatch(reader, /api\.tams\.com\.ar/);
+});

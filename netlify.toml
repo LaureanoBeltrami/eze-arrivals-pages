@@ -1,0 +1,7 @@
+[build]
+  command = "PAGES_BASE=/ VITE_ARRIVALS_JSON_URL=/.netlify/functions/arrivals npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  included_files = ["sync/data/airports.json"]
