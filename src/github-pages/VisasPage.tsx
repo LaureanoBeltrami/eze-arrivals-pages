@@ -2,7 +2,7 @@ import { Search, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import AirportHeader from "../Components/Flights/AirportHeader";
 import { publicAsset } from "../lib/publicAsset";
-import { visaFlag } from "../lib/visaFlags";
+import { visaFlagUrl } from "../lib/visaFlags";
 
 type Visa = { observations: string; observationIds: string[]; country: string; code: string; capital: string; tourist: string; diplomatic: string; official: string; continent: string; nationality: string };
 type VisaSource = { source: string; sourcePages: number; visas: Visa[]; observations: Record<string, string> };
@@ -26,7 +26,7 @@ export default function VisasPage({ now, onBack }: { now: number; onBack: () => 
                 </div>
                 <div className="table-scroll" tabIndex={0}>
                     <table className="fids-table visas-table"><thead><tr><th>PAÍS</th><th>CÓD.</th><th>CAPITAL</th><th>TA.</th><th>DIP.</th><th>OF.</th><th>CONTINENTE</th><th>NACIONALIDAD</th><th>OBS.</th></tr></thead><tbody>
-                        {visas.map((visa) => <tr key={`${visa.code}-${visa.country}`}><td><button className="visa-country" onClick={() => setSelected(visa)}><span className="visa-flag" aria-hidden="true">{visaFlag(visa.code)}</span><strong>{visa.country}</strong></button></td><td>{visa.code}</td><td>{visa.capital}</td><td>{visa.tourist}</td><td>{visa.diplomatic}</td><td>{visa.official}</td><td>{visa.continent}</td><td>{visa.nationality}</td><td>{visa.observations ? <button className="observation-link" onClick={() => setSelected(visa)}>{visa.observations}</button> : "-"}</td></tr>)}
+                        {visas.map((visa) => <tr key={`${visa.code}-${visa.country}`}><td><button className="visa-country" onClick={() => setSelected(visa)}>{visaFlagUrl(visa.code) ? <img className="visa-flag" src={visaFlagUrl(visa.code)!} width="24" height="18" alt="" /> : <span className="visa-flag-placeholder" aria-hidden="true">-</span>}<strong>{visa.country}</strong></button></td><td>{visa.code}</td><td>{visa.capital}</td><td>{visa.tourist}</td><td>{visa.diplomatic}</td><td>{visa.official}</td><td>{visa.continent}</td><td>{visa.nationality}</td><td>{visa.observations ? <button className="observation-link" onClick={() => setSelected(visa)}>{visa.observations}</button> : "-"}</td></tr>)}
                     </tbody></table>
                 </div>
                 <div className="board-summary"><span><strong>{String(visas.length).padStart(3, "0")}</strong> países</span><span>Fuente: DNM · Documento de {data?.sourcePages ?? 37} páginas</span></div>
