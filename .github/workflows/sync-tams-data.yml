@@ -1,0 +1,92 @@
+name: Synchronize TAMS snapshot to data branch
+
+on:
+  workflow_dispatch:
+
+# The job only needs to update the dedicated data ref. It has no Pages, packages,
+# deployments, pull-request, or external-secret permissions.
+permissions:
+  contents: write
+
+concurrency:
+  group: eze-arrivals-tams-data
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    name: Controlled TAMS synchronization
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check out synchronization source
+        # actions/checkout@v4.2.2, pinned to its immutable official commit.
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Prepare isolated data worktree
+        id: data
+        shell: bash
+        run: |
+          data_dir="$RUNNER_TEMP/eze-arrivals-data"
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch --no-tags origin data
+            git worktree add --detach "$data_dir" FETCH_HEAD
+          else
+            # This is only reached on the first manually authorized run.
+            # It creates data from the reviewed source, never by force-pushing a ref.
+            git worktree add -b data "$data_dir" HEAD
+          fi
+          mkdir -p "$data_dir/public/data"
+          if [ ! -f "$data_dir/public/data/arrivals.json" ]; then
+            cp public/data/arrivals.json "$data_dir/public/data/arrivals.json"
+          fi
+          echo "directory=$data_dir" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch, validate, and stage the JSON snapshot
+        id: sync
+        shell: bash
+        env:
+          SNAPSHOT_PATH: ${{ steps.data.outputs.directory }}/public/data/arrivals.json
+          TAMS_SYNC_LIVE: "1"
+        run: |
+          set +e
+          node sync/sync-tams.mjs --live > "$RUNNER_TEMP/sync-metrics.json"
+          exit_code=$?
+          set -e
+          cat "$RUNNER_TEMP/sync-metrics.json" >> "$GITHUB_STEP_SUMMARY"
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+          if git -C "${{ steps.data.outputs.directory }}" diff --quiet -- public/data/arrivals.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit changed snapshot only
+        if: steps.sync.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git -C "${{ steps.data.outputs.directory }}" config user.name "github-actions[bot]"
+          git -C "${{ steps.data.outputs.directory }}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "${{ steps.data.outputs.directory }}" add -- public/data/arrivals.json
+          git -C "${{ steps.data.outputs.directory }}" diff --cached --quiet && exit 0
+          git -C "${{ steps.data.outputs.directory }}" commit -m "data: update EZE arrivals snapshot"
+          # A non-fast-forward rejection is a safe failure; no force push is allowed.
+          git -C "${{ steps.data.outputs.directory }}" push origin HEAD:data
+
+      - name: Mark provider failure after safely publishing its status
+        if: steps.sync.outputs.exit_code != '0'
+        shell: bash
+        run: exit "${{ steps.sync.outputs.exit_code }}"
+
+      - name: Report failure while retaining published flights
+        if: failure()
+        shell: bash
+        run: |
+          echo "## Synchronization failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "Only the failure status may have been published; the last valid flight snapshot remains available." >> "$GITHUB_STEP_SUMMARY"
