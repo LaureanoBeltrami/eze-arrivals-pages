@@ -64,8 +64,8 @@ export default function GitHubPagesArrivals() {
                                 <button onClick={() => setView("visas")}>
                                     Visas
                                 </button>
-                                <time title="Última consulta exitosa a TAMS" dateTime={snapshot.lastSuccessfulSyncAt ?? undefined}>
-                                    Última actualización TAMS: {time(snapshot.lastSuccessfulSyncAt)}
+                                <time title="Última sincronización exitosa con TAMS publicada" dateTime={snapshot.lastSuccessfulSyncAt ?? undefined}>
+                                    Última sincronización TAMS: {time(snapshot.lastSuccessfulSyncAt)}
                                 </time>
                             </div>
                             <span role="status" className={snapshot.syncFailed ? "update-error" : fresh ? "update-fresh" : "update-stale"}>

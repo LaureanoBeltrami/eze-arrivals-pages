@@ -26,9 +26,7 @@ been configured in GitHub Pages.
 
 1. In the GitHub repository, select **Settings → Pages → Source: GitHub Actions**.
 2. Run **Deploy GitHub Pages** manually to publish the reviewed frontend.
-3. **Synchronize TAMS snapshot to data branch** retains a server-side backup; the
-   board reads the public TAMS API directly every 45 seconds (with that snapshot
-   as its fallback), so it remains current if GitHub delays scheduled runs.
+3. **Synchronize TAMS snapshot to data branch** runs every five minutes at
    minutes 2, 7, 12 through 57 UTC, and can also be dispatched manually. It
    writes only `public/data/arrivals.json` on the
    independent `data` branch, avoids force pushes, and retains the last valid

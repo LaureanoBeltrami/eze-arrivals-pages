@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ARRIVALS_REFRESH_MS } from "../lib/arrivalsSnapshot";
 import { loadStaticArrivals, type StaticArrivalsSnapshot } from "./staticArrivals";
-import { loadLiveTamsArrivals } from "./liveTamsArrivals";
 
-/** Reads TAMS directly every 45 seconds; the static snapshot is a safe fallback. */
+/** Reads only the published JSON snapshot; it never calls the provider. */
 export function useStaticArrivalsRefresh(
     onSnapshot: (snapshot: StaticArrivalsSnapshot) => void,
 ) {
@@ -19,7 +18,7 @@ export function useStaticArrivalsRefresh(
         lastAttempt.current = Date.now();
         setRefreshing(true);
         setMessage(null);
-        void loadLiveTamsArrivals(fetch).catch(() => loadStaticArrivals(fetch, lastSuccessfulUpdate.current))
+        void loadStaticArrivals(fetch, lastSuccessfulUpdate.current)
             .then((snapshot) => {
                 lastSuccessfulUpdate.current = snapshot.lastUpdate;
                 onSnapshot(snapshot);
