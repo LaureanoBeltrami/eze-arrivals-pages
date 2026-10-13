@@ -35,7 +35,9 @@ export function useStaticArrivalsRefresh(
         const refreshIfDue = () => {
             if (Date.now() - lastAttempt.current >= ARRIVALS_REFRESH_MS) refresh();
         };
-        const timer = globalThis.window.setInterval(refreshIfDue, ARRIVALS_REFRESH_MS);
+        // Do not re-check elapsed time here: a timer firing a few milliseconds
+        // early would otherwise skip an entire five-minute cycle.
+        const timer = globalThis.window.setInterval(refresh, ARRIVALS_REFRESH_MS);
         document.addEventListener("visibilitychange", refreshIfDue);
         return () => {
             globalThis.window.clearInterval(timer);
