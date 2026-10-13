@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { describe, expect, it, vi } from "vitest";
-import { loadStaticArrivals } from "./staticArrivals";
+import { loadStaticArrivals, staticArrivalsUrl } from "./staticArrivals";
 
 describe("static GitHub Pages arrivals source", () => {
     it("reads explicit synchronization metadata with a revalidating request", async () => {
@@ -19,7 +19,9 @@ describe("static GitHub Pages arrivals source", () => {
 
         const snapshot = await loadStaticArrivals(fetcher);
 
-        expect(fetcher).toHaveBeenCalledWith(expect.objectContaining({ pathname: "/data/arrivals.json" }), {
+        expect(fetcher).toHaveBeenCalledWith(expect.objectContaining({
+            href: "https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json",
+        }), {
             cache: "no-cache", headers: { Accept: "application/json" },
         });
         expect(snapshot.flights).toEqual([]);
@@ -28,6 +30,10 @@ describe("static GitHub Pages arrivals source", () => {
         expect(snapshot.lastFlightChangeAt).toBe("2026-10-12T14:40:00Z");
         expect(snapshot.syncFailed).toBe(false);
         expect(Number.isFinite(Date.parse(snapshot.serverTime))).toBe(true);
+    });
+
+    it("uses the isolated data branch by default", () => {
+        expect(staticArrivalsUrl().href).toBe("https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json");
     });
 
     it("rejects an invalid document instead of rendering untrusted data", async () => {

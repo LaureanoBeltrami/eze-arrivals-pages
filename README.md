@@ -32,9 +32,9 @@ been configured in GitHub Pages.
    independent `data` branch, avoids force pushes, and retains the last valid
    snapshot when validation or the provider fails.
 
-After validating CORS for the exact URL, configure the public repository Actions
-variable `ARRIVALS_JSON_URL` to point Pages at the data branch, then manually
-run **Deploy GitHub Pages** again:
+Pages reads the public `data` branch by default. To use a different public,
+CORS-enabled JSON endpoint, configure the repository Actions variable
+`ARRIVALS_JSON_URL` and manually run **Deploy GitHub Pages** again:
 
 ```powershell
 ARRIVALS_JSON_URL=https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json

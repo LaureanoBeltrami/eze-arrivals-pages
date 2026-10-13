@@ -3,8 +3,10 @@ name: Synchronize TAMS snapshot to data branch
 on:
   workflow_dispatch:
   schedule:
-    # UTC: minutes 2, 7, 12, …, 57. Avoids the high-load minute zero.
-    - cron: "2-57/5 * * * *"
+    # UTC: every five minutes, deliberately avoiding the high-load minute zero.
+    # Keep the minute list explicit: it also reactivates a schedule if GitHub
+    # has marked a dormant workflow inactive.
+    - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
 
 # The job only needs to update the dedicated data ref. It has no Pages, packages,
 # deployments, pull-request, or external-secret permissions.

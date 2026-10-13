@@ -1,12 +1,11 @@
 import type { ArrivalsSnapshot } from "../lib/arrivalsSnapshot";
-import { publicAsset } from "../lib/publicAsset";
 import type { Flight } from "../types/flights";
 
-export const STATIC_ARRIVALS_PATH = "data/arrivals.json";
+const DATA_BRANCH_URL = "https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json";
 
 export function staticArrivalsUrl(): URL {
     const configured = import.meta.env.VITE_ARRIVALS_JSON_URL;
-    return new URL(configured || publicAsset(STATIC_ARRIVALS_PATH), globalThis.location.href);
+    return new URL(configured || DATA_BRANCH_URL, globalThis.location.href);
 }
 
 export interface StaticArrivalsDocument {

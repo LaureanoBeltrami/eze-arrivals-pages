@@ -5,7 +5,7 @@ import test from "node:test";
 test("data workflow schedules real guarded syncs safely and without force pushes", async () => {
     const workflow = await readFile(new URL("../../.github/workflows/sync-tams-data.yml", import.meta.url), "utf8");
     assert.match(workflow, /workflow_dispatch:/);
-    assert.match(workflow, /schedule:[\s\S]*?cron: "2-57\/5 \* \* \* \*"/);
+    assert.match(workflow, /schedule:[\s\S]*?cron: "2,7,12,17,22,27,32,37,42,47,52,57 \* \* \* \*"/);
     assert.match(workflow, /^permissions:\s*\n\s+contents: write\s*$/m);
     assert.match(workflow, /concurrency:/);
     assert.match(workflow, /cancel-in-progress: false/);
