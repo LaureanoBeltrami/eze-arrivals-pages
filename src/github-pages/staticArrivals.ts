@@ -44,8 +44,10 @@ export async function loadStaticArrivals(
     previousLastUpdate: string | null = null,
 ): Promise<StaticArrivalsSnapshot> {
     const response = await fetcher(staticArrivalsUrl(), {
-        // Revalidate a cached GitHub Raw/Pages response instead of creating a new URL every 45s.
-        cache: "no-cache",
+        // This is one read of the shared Netlify snapshot every five minutes.
+        // Do not let an old browser/CDN response postpone a newly completed
+        // central refresh for another full interval.
+        cache: "no-store",
         headers: { Accept: "application/json" },
     });
     if (!response.ok) throw new Error(`Static arrivals HTTP ${response.status}`);

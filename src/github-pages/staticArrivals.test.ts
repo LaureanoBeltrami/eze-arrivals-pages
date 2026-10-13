@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from "vitest";
 import { loadStaticArrivals, staticArrivalsUrl } from "./staticArrivals";
 
 describe("static GitHub Pages arrivals source", () => {
-    it("reads explicit synchronization metadata with a revalidating request", async () => {
+    it("reads explicit synchronization metadata without accepting a cached response", async () => {
         const fetcher = vi.fn().mockResolvedValue({
             ok: true,
             json: async () => ({
@@ -22,7 +22,7 @@ describe("static GitHub Pages arrivals source", () => {
         expect(fetcher).toHaveBeenCalledWith(expect.objectContaining({
             href: "https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json",
         }), {
-            cache: "no-cache", headers: { Accept: "application/json" },
+            cache: "no-store", headers: { Accept: "application/json" },
         });
         expect(snapshot.flights).toEqual([]);
         expect(snapshot.lastUpdate).toBe("2026-10-12T15:00:00Z");
