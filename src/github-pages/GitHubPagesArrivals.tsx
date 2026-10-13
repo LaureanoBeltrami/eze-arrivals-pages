@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { RefreshCw } from "lucide-react";
 import AirportHeader from "../Components/Flights/AirportHeader";
 import ArrivalsStats from "../Components/Flights/ArrivalsStats";
 import FlightFilters from "../Components/Flights/FlightFilters";
@@ -11,6 +10,7 @@ import { time } from "../lib/flightTime";
 import type { RelativeTimeFilter } from "../types/flights";
 import { type StaticArrivalsSnapshot } from "./staticArrivals";
 import { useStaticArrivalsRefresh } from "./useStaticArrivalsRefresh";
+import VisasPage from "./VisasPage";
 
 const STATIC_STALE_MS = 3 * 60 * 60 * 1000;
 const emptySnapshot: StaticArrivalsSnapshot = {
@@ -24,6 +24,7 @@ const emptySnapshot: StaticArrivalsSnapshot = {
 };
 
 export default function GitHubPagesArrivals() {
+    const [view, setView] = useState<"arrivals" | "visas">("arrivals");
     const [window, setWindow] = useState<Exclude<RelativeTimeFilter, null>>("now");
     const [search, setSearch] = useState("");
     const [snapshot, setSnapshot] = useState(emptySnapshot);
@@ -48,6 +49,7 @@ export default function GitHubPagesArrivals() {
           ? "DATOS ACTUALIZADOS"
           : "DATOS DESACTUALIZADOS";
 
+    if (view === "visas") return <VisasPage now={now} onBack={() => setView("arrivals")} />;
     return (
         <div className="fids-page">
             <AirportHeader now={now} />
@@ -59,9 +61,8 @@ export default function GitHubPagesArrivals() {
                         <FlightSearch value={search} onChange={setSearch} />
                         <div className="refresh-control">
                             <div>
-                                <button onClick={refresh} disabled={refreshing}>
-                                    <RefreshCw size={19} className={refreshing ? "animate-spin" : ""} aria-hidden="true" />
-                                    {refreshing ? "Actualizando..." : "Actualizar"}
+                                <button onClick={() => setView("visas")}>
+                                    Visas
                                 </button>
                                 <time title="Última sincronización exitosa con TAMS publicada" dateTime={snapshot.lastSuccessfulSyncAt ?? undefined}>
                                     Última sincronización TAMS: {time(snapshot.lastSuccessfulSyncAt)}

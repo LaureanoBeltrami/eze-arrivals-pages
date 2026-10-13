@@ -1,7 +1,7 @@
 ﻿import { PlaneLanding } from "lucide-react";
 import { TIMEZONE, time } from "../../lib/flightTime";
 
-export default function AirportHeader({ now }: { now: number }) {
+export default function AirportHeader({ now, title = "ARRIBOS\nINTERNACIONALES", subtitle = "VUELOS EN TIEMPO REAL" }: { now: number; title?: string; subtitle?: string }) {
     const date = new Intl.DateTimeFormat("es-AR", {
         timeZone: TIMEZONE,
         weekday: "long",
@@ -29,11 +29,10 @@ export default function AirportHeader({ now }: { now: number }) {
             </div>
             <div className="board-title">
                 <h1>
-                    ARRIBOS
-                    <br className="title-break" /> INTERNACIONALES
+                    {title.split("\n").map((line, index) => <span key={line}>{index > 0 && <><br className="title-break" /> </>}{line}</span>)}
                 </h1>
                 <p>
-                    <span className="live-dot" /> VUELOS EN TIEMPO REAL{" "}
+                    <span className="live-dot" /> {subtitle}{" "}
                     <span className="title-separator">·</span>{" "}
                     <strong>TERMINAL A</strong>
                 </p>

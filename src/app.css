@@ -721,6 +721,33 @@
     color: var(--fids-muted);
 }
 
+.visa-controls { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(280px, 1.2fr) auto; }
+.visa-heading h2 { margin: 0; font-size: 16px; letter-spacing: .04em; }
+.visa-heading p { margin: 5px 0 0; color: var(--fids-muted); font-size: 14px; }
+.visa-back, .observation-link, .visa-country { border: 0; color: inherit; background: transparent; font: inherit; }
+.visa-back { border: 1px solid #526171; border-radius: 5px; min-height: 50px; padding: 0 16px; font-weight: 650; background: #303e4c; }
+.visas-table { min-width: 1180px; }
+.visas-table td { height: 54px; }
+.visa-country { display: flex; align-items: center; gap: 10px; text-align: left; min-height: 38px; }
+.visa-country:hover, .observation-link:hover { color: var(--fids-blue); }
+.visa-flag { color: var(--fids-blue); font-size: 20px; }
+.observation-link { color: var(--fids-blue); text-decoration: underline; min-width: 44px; }
+.visa-modal-backdrop { align-items: center; background: rgb(8 14 20 / .72); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 10; }
+.visa-modal { background: var(--fids-panel); border: 1px solid #526171; border-radius: 8px; box-shadow: 0 18px 50px rgb(0 0 0 / .45); max-height: min(800px, calc(100vh - 40px)); max-width: 780px; overflow: auto; padding: 28px; position: relative; width: 100%; }
+.visa-close { background: transparent; border: 0; color: var(--fids-text); padding: 6px; position: absolute; right: 16px; top: 16px; }
+.visa-kicker { color: var(--fids-blue); font-size: 14px; font-weight: 650; letter-spacing: .06em; margin: 0; }
+.visa-modal h2 { font-size: 28px; margin: 6px 42px 22px 0; }
+.visa-modal dl { display: grid; gap: 1px; grid-template-columns: 1fr 1fr; margin: 0; }
+.visa-modal dl div { background: #26313d; padding: 12px; }
+.visa-modal dt { color: var(--fids-muted); font-size: 13px; font-weight: 650; }
+.visa-modal dd { margin: 5px 0 0; }
+.visa-notes { border-top: 1px solid var(--fids-border); margin-top: 22px; padding-top: 18px; }
+.visa-notes h3 { font-size: 18px; margin: 0 0 12px; }
+.visa-notes article { border-left: 3px solid var(--fids-blue); margin: 14px 0; padding: 0 0 0 14px; }
+.visa-notes h4 { color: var(--fids-blue); margin: 0 0 7px; }
+.visa-notes p { color: #d6dce2; line-height: 1.55; margin: 8px 0; white-space: pre-wrap; }
+@media (max-width: 900px) { .visa-controls { grid-template-columns: 1fr; } .visa-back { width: max-content; } }
+
 /* Tablet and phone layouts only. Approved desktop rules remain unchanged. */
 @media (max-width: 1250px) {
     .fids-page,
