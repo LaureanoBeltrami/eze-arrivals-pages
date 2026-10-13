@@ -2,7 +2,8 @@
 
 Static FIDS board for EZE international arrivals. It is independent from the
 legacy application and only contains a React/Vite frontend, the isolated TAMS
-synchronizer, and two manually dispatched GitHub Actions workflows.
+synchronizer, a manually dispatched Pages workflow, and a scheduled data-sync
+workflow.
 
 The committed `public/data/arrivals.json` is deliberately an empty example.
 It contains no flight data and permits the board to build safely before the
@@ -25,8 +26,9 @@ been configured in GitHub Pages.
 
 1. In the GitHub repository, select **Settings → Pages → Source: GitHub Actions**.
 2. Run **Deploy GitHub Pages** manually to publish the reviewed frontend.
-3. Run **Synchronize TAMS snapshot to data branch** manually only after an
-   authorized live-data test. It writes only `public/data/arrivals.json` on the
+3. **Synchronize TAMS snapshot to data branch** runs every five minutes at
+   minutes 2, 7, 12 through 57 UTC, and can also be dispatched manually. It
+   writes only `public/data/arrivals.json` on the
    independent `data` branch, avoids force pushes, and retains the last valid
    snapshot when validation or the provider fails.
 
@@ -55,5 +57,7 @@ git remote add origin https://github.com/LaureanoBeltrami/eze-arrivals-pages.git
 git push -u origin main
 ```
 
-Do not add a schedule or run the synchronization workflow until it has been
-explicitly approved.
+GitHub Actions schedules are best-effort: they may be delayed or dropped under
+load, and public-repository schedules can be disabled after prolonged
+inactivity. GitHub Raw is cacheable and does not provide a freshness SLA; the
+board therefore shows the last successful sync and stale-data state.

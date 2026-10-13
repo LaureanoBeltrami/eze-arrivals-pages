@@ -1,6 +1,6 @@
 # Static data branch design
 
-`sync-tams-data.yml` is manual-only. A future authorized run checks out the reviewed source, reads the current `data` branch in a separate worktree, and publishes only `public/data/arrivals.json` when canonical flight content changed.
+`sync-tams-data.yml` runs at minutes 2, 7, 12 through 57 of every UTC hour and can also be dispatched manually. Each run checks out the reviewed source, reads the current `data` branch in a separate worktree, and publishes only `public/data/arrivals.json` when canonical flight content changed.
 
 The workflow never force-pushes. A rejected normal push is a safe failure: the existing JSON remains served. HTTP, malformed, invalid, empty-replacement, and stale-candidate failures also leave the data branch untouched. The workflow summary reports only counts and status, never raw flights or response bodies.
 
@@ -12,6 +12,6 @@ Do not compact in the regular sync workflow. Retain ordinary fast-forward commit
 
 ## GitHub Raw caveats
 
-GitHub Raw is a best-effort static origin, not a freshness SLA. Browsers may cache it, and GitHub Actions schedules can be delayed or dropped under load. The frontend uses `cache: "no-cache"`, rejects an older `lastSuccessfulSyncAt`, keeps prior data on failure, and visibly marks old data stale. CORS must be validated against the exact public Raw URL before release; if it does not permit browser access, keep `VITE_ARRIVALS_JSON_URL` unset and deploy data with Pages instead.
+GitHub Raw is a best-effort static origin, not a freshness SLA. Browsers may cache it, and GitHub Actions schedules can be delayed or dropped under load; scheduled workflows in public repositories can also be disabled after 60 days without repository activity. The frontend uses `cache: "no-cache"`, rejects an older `lastSuccessfulSyncAt`, keeps prior data on failure, and visibly marks old data stale. CORS must be validated against the exact public Raw URL before release; if it does not permit browser access, keep `VITE_ARRIVALS_JSON_URL` unset and deploy data with Pages instead.
 
 For a Pages deployment sourced from the `data` branch, every data change requires a Pages deployment. That avoids cross-origin Raw reads but creates deploy churn and does not make the five-minute scheduler reliable. Neither option is a real-time data service.

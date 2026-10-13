@@ -17,17 +17,20 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Check out reviewed source
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        # actions/checkout@v7.0.1, pinned to its immutable official commit.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Set up Pages
-        uses: actions/configure-pages@v5
+        # actions/configure-pages@v6.0.0, pinned to its immutable official commit.
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
 
       - name: Use Node.js 22
-        uses: actions/setup-node@v4
+        # actions/setup-node@v7.1.0, pinned to its immutable official commit.
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
           node-version: 22
           cache: npm
@@ -43,10 +46,12 @@ jobs:
         run: PAGES_BASE=/eze-arrivals-pages/ npm run build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        # actions/upload-pages-artifact@v5.0.0, pinned to its immutable official commit.
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: dist
 
       - name: Deploy Pages artifact
         id: deployment
-        uses: actions/deploy-pages@v4
+        # actions/deploy-pages@v5.0.1, pinned to its immutable official commit.
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
