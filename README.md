@@ -38,7 +38,7 @@ CORS-enabled JSON endpoint, configure the repository Actions variable
 ARRIVALS_JSON_URL=https://raw.githubusercontent.com/LaureanoBeltrami/eze-arrivals-pages/data/public/data/arrivals.json
 ```
 
-The browser never contacts TAMS. It revalidates the shared snapshot every 45
+The browser never contacts TAMS. It revalidates the shared snapshot every five
 seconds and uses its successful-sync timestamp to determine freshness.
 
 ## First publication (when authorized)

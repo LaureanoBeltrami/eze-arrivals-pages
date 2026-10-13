@@ -8,7 +8,7 @@ export default async () => {
         headers: {
             "Content-Type": "application/json; charset=utf-8",
             // Visitors read one shared snapshot; this function never contacts TAMS.
-            "Cache-Control": "public, max-age=45, s-maxage=45, stale-while-revalidate=60",
+            "Cache-Control": "public, max-age=300, s-maxage=300, stale-while-revalidate=60",
         },
     });
 };
