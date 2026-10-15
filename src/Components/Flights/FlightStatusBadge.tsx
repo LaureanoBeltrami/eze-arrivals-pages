@@ -17,7 +17,7 @@ export default function FlightStatusBadge({
             }
         >
             <span aria-hidden="true" />
-            {status ? labels[status] : "ESTIMA"}
+            {providerStatus?.trim().toUpperCase() === "CON" ? "CONSULTE" : status ? labels[status] : "ESTIMA"}
         </span>
     );
 }
