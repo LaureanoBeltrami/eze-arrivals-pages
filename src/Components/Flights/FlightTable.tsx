@@ -1,15 +1,30 @@
 import { ArrowDown, SearchX } from "lucide-react";
 import type { Flight } from "../../types/flights";
 import FlightRow from "./FlightRow";
+import { getEffectiveArrivalTime } from "../../lib/flightTime";
 export default function FlightTable({
     flights,
     onReset,
     filtered,
+    relative,
 }: {
     flights: Flight[];
     onReset: () => void;
     filtered: boolean;
+    relative: string;
 }) {
+    const direction = relative.startsWith("-") ? -1 : 1;
+    const orderedFlights = [...flights].sort((a, b) => {
+        const aTime = getEffectiveArrivalTime(a);
+        const bTime = getEffectiveArrivalTime(b);
+        if (Number.isFinite(aTime) && Number.isFinite(bTime)) {
+            return direction * (aTime - bTime) || a.flight_number.localeCompare(b.flight_number);
+        }
+        if (Number.isFinite(aTime)) return -1;
+        if (Number.isFinite(bTime)) return 1;
+        return a.flight_number.localeCompare(b.flight_number);
+    });
+}
     return (
         <>
             <div
@@ -53,7 +68,7 @@ export default function FlightTable({
                         </tr>
                     </thead>
                     <tbody>
-                        {flights.map((flight) => (
+                        {orderedFlights.map((flight) => (
                             <FlightRow key={flight.id} flight={flight} />
                         ))}
                     </tbody>
