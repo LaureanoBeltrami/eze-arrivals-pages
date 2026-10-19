@@ -24,7 +24,6 @@ export default function FlightTable({
         if (Number.isFinite(bTime)) return 1;
         return a.flight_number.localeCompare(b.flight_number);
     });
-}
     return (
         <>
             <div
