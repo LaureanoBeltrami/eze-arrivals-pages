@@ -20,7 +20,7 @@ export default function VisasPage({ now, onBack }: { now: number; onBack: () => 
         <main className="fids-main">
             <section className="arrivals-board" aria-label="Listado de países y régimen de visas">
                 <div className="board-controls visa-controls">
-                    <div className="visa-heading"><h2>LISTADO DE PAÍSES Y RÉGIMEN DE VISAS</h2><p>{data?.source ?? "Cargando fuente oficial…"}</p></div>
+                    <div className="visa-heading"><h2>LISTADO DE PAÍSES Y RÉGIMEN DE VISAS</h2><p>{data?.source ?? "Cargando fuente oficial…"}</p><p role="note">Referencia documental del 19/03/2026. Antes de tomar decisiones migratorias, corroborar vigencia y excepciones en los sistemas y normativa oficiales.</p></div>
                     <label className="flight-search"><Search size={20} aria-hidden="true" /><input autoFocus value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar país, nacionalidad o código" aria-label="Buscar país, nacionalidad o código" />{search && <button onClick={() => setSearch("")} aria-label="Limpiar búsqueda"><X size={18} /></button>}</label>
                     <button className="visa-back" onClick={onBack}>Arribos</button>
                 </div>
