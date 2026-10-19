@@ -86,6 +86,28 @@ describe("current search and relative windows", () => {
         expect(filterFlights(flights, "", now, "now").map(f => f.id)).toEqual([1, 3, 2, 4]);
     });
 
+    it("sorts delayed flights by confirmed actual arrival time, matching the HORA column", () => {
+        const landed = {
+            ...eta(-160), id: "MU745", flight_number: "MU745",
+            provider_status: "ATE", status: "landed" as const,
+            actual_arrival_time: new Date(now - 10 * 60000).toISOString(),
+        };
+        const older = { ...eta(-35), id: "AR1305", flight_number: "AR1305" };
+        const latest = { ...eta(-5), id: "IB0107", flight_number: "IB0107" };
+        expect(filterFlights([older, landed, latest], "", now, "-4h").map(f => f.id))
+            .toEqual(["IB0107", "MU745", "AR1305"]);
+    });
+
+    it("uses the displayed actual arrival for time-window inclusion, without inferring touchdown", () => {
+        const landed = {
+            ...eta(-300), id: "MU745", provider_status: "ATE",
+            actual_arrival_time: new Date(now - 20 * 60000).toISOString(),
+        };
+        expect(filterFlights([landed], "", now, "-1h")).toHaveLength(1);
+        const unconfirmed = { ...landed, provider_status: "DEM" };
+        expect(filterFlights([unconfirmed], "", now, "-1h")).toHaveLength(0);
+    });
+
     it("searches all current fields ignoring case, accents and outer whitespace", () => {
         for (const query of [" ar1133 ", "AEROLINEAS", "mad", "madrid"])
             expect(filterFlights([flight], query, now, "now")).toHaveLength(1);
