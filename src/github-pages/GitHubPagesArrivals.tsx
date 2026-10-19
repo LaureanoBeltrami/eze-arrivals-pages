@@ -64,6 +64,7 @@ export default function GitHubPagesArrivals() {
                                 <button onClick={() => setView("visas")}>
                                     Visas
                                 </button>
+                                <a className="dnm-link" href="https://www.dnm.gov.ar/login/" target="_blank" rel="noopener noreferrer" aria-label="Abrir DNM Sistema Migratorio en una pestaña nueva">DNM <small>Sistema Migratorio</small></a>
                                 <time title="Última sincronización exitosa con TAMS publicada" dateTime={snapshot.lastSuccessfulSyncAt ?? undefined}>
                                     Última sincronización TAMS: {time(snapshot.lastSuccessfulSyncAt)}
                                 </time>
