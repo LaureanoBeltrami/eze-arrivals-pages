@@ -308,6 +308,31 @@
     background: #303e4c;
     min-height: 50px;
 }
+.refresh-control .dnm-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    min-height: 50px;
+    padding: 7px 16px;
+    border: 1px solid #3974ce;
+    border-radius: 5px;
+    background: #124ba0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.refresh-control .dnm-link small {
+    font-size: 11px;
+    font-weight: 500;
+}
+.refresh-control .dnm-link:hover,
+.refresh-control .dnm-link:focus-visible {
+    background: #1b61bd;
+}
 .refresh-control button:hover {
     background: #3b4b5b;
 }
@@ -525,6 +550,11 @@
     border-color: #726342;
 }
 .status-cancelled {
+    color: #ff8585;
+    background: #49343a;
+    border-color: #71474b;
+}
+.status-consulte {
     color: #ff8585;
     background: #49343a;
     border-color: #71474b;
