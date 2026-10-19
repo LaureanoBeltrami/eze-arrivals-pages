@@ -7,9 +7,10 @@ export default function FlightStatusBadge({
     status: FlightStatus | null;
     providerStatus?: string | null;
 }) {
+    const isConsulte = providerStatus?.trim().toUpperCase() === "CON";
     return (
         <span
-            className={`flight-status status-${status ?? "unknown"}`}
+            className={`flight-status ${isConsulte ? "status-consulte" : `status-${status ?? "unknown"}`}`}
             title={
                 providerStatus
                     ? `Estado del proveedor: ${providerStatus}`
@@ -17,7 +18,7 @@ export default function FlightStatusBadge({
             }
         >
             <span aria-hidden="true" />
-            {providerStatus?.trim().toUpperCase() === "CON" ? "CONSULTE" : status ? labels[status] : "ESTIMA"}
+            {isConsulte ? "CONSULTE" : status ? labels[status] : "ESTIMA"}
         </span>
     );
 }
