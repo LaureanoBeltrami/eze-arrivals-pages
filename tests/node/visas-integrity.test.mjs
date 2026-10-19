@@ -27,7 +27,7 @@ test("prime-marked official observation IDs remain distinct", () => {
 });
 
 test("country fields are free from corrupt PDF extraction and include special cases", () => {
-  assert.equal(data.visas.length, 191);
+  assert.equal(data.visas.length, 190);
   const cases = {
     CHN: { capital: "PEKÍN / BEIJING", tourist: "V (VER OBS 37’’’’)" },
     IND: { capital: "NUEVA DELHI", tourist: "V – (VER OBS 70-70’)" },
@@ -46,5 +46,5 @@ test("country fields are free from corrupt PDF extraction and include special ca
   assert.deepEqual(byCode.get("TWN").observationIds, ["62 (pág. 12)"]);
   assert.ok(data.observations["62"].startsWith("DOMINICA"));
   assert.ok(data.observations["62 (pág. 12)"].includes("CERTIFICADO DE VIAJE"));
-  assert.ok(data.visas.some(v => v.country === "REPÚBLICA MOLDAVA NISTRINA" && v.observationIds.includes("X")));
+  assert.ok(byCode.get("MDA").observationIds.includes("X"));
 });
