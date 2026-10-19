@@ -24,7 +24,7 @@
       "tourist": "V -AVE",
       "diplomatic": "-",
       "official": "-",
-      "continent": "EUROPA DELESTE",
+      "continent": "EUROPA DEL ESTE",
       "nationality": "ALBANESA",
       "observationIds": []
     },
@@ -580,8 +580,8 @@
       "observations": "8 / 37 / 37’ / 37’’ / 37’’’ / 37’’’’ / 37’’’’’",
       "country": "CHINA, REP. POPULAR",
       "code": "CHN",
-      "capital": "PEKÍN / BEIJINGV (VER OBS",
-      "tourist": "37´´´´)",
+      "capital": "PEKÍN / BEIJING",
+      "tourist": "V (VER OBS 37’’’’)",
       "diplomatic": "-",
       "official": "-",
       "continent": "ASIA",
@@ -962,7 +962,7 @@
     },
     {
       "observations": "",
-      "country": "GUINEAECUATORIAL",
+      "country": "GUINEA ECUATORIAL",
       "code": "GNQ",
       "capital": "MALABO",
       "tourist": "V -AVE",
@@ -1020,7 +1020,9 @@
       "official": "-",
       "continent": "ASIA",
       "nationality": "BRITÁNICA",
-      "observationIds": []
+      "observationIds": [
+        "*"
+      ]
     },
     {
       "observations": "23**",
@@ -1033,7 +1035,8 @@
       "continent": "ASIA",
       "nationality": "CHINA",
       "observationIds": [
-        "23"
+        "23",
+        "**"
       ]
     },
     {
@@ -1054,8 +1057,8 @@
       "observations": "3 / 70 / 70’",
       "country": "INDIA",
       "code": "IND",
-      "capital": "NUEVA DELHIV",
-      "tourist": "\u0000±(VER OBS 70-70\u0000¶\u0000",
+      "capital": "NUEVA DELHI",
+      "tourist": "V – (VER OBS 70-70’)",
       "diplomatic": "-",
       "official": "-",
       "continent": "ASIA",
@@ -1921,14 +1924,14 @@
     },
     {
       "observations": "6",
-      "country": "DEMOCRÁTICA (ex",
+      "country": "REPÚBLICA ÁRABE SAHARAUI DEMOCRÁTICA (ex SAHARA OCCIDENTAL)",
       "code": "ESH",
-      "capital": "BIR LEHLU",
+      "capital": "EL AAIÚN / BIR LEHLU (Capital Provisional)",
       "tourist": "C/V",
       "diplomatic": "",
       "official": "",
-      "continent": "ÁFRICAE",
-      "nationality": "SAHARAUIDAD",
+      "continent": "ÁFRICA",
+      "nationality": "SAHARAUI",
       "observationIds": [
         "6"
       ]
@@ -1966,8 +1969,8 @@
       "observations": "68 / 68’",
       "country": "REPÚBLICA DOMINICANA",
       "code": "DOM",
-      "capital": "SANTO DOMINGOV (VER OBS",
-      "tourist": "68)",
+      "capital": "SANTO DOMINGO",
+      "tourist": "V (VER OBS 68)",
       "diplomatic": "-",
       "official": "-",
       "continent": "AMÉRICA CENTRAL",
@@ -2033,13 +2036,13 @@
     },
     {
       "observations": "",
-      "country": "SAMOA (exSAMOA OCCIDENTAL)",
+      "country": "SAMOA (ex SAMOA OCCIDENTAL)",
       "code": "WSM",
       "capital": "APIA",
-      "tourist": "V \u0000±AVE",
+      "tourist": "V – AVE",
       "diplomatic": "V",
       "official": "V",
-      "continent": "OCEANÌA",
+      "continent": "OCEANÍA",
       "nationality": "SAMOANA",
       "observationIds": []
     },
@@ -2316,17 +2319,17 @@
       ]
     },
     {
-      "observations": "62",
-      "country": "TAIWÁN\u0000±TERRITORIO CHINO DE TAIWAN",
+      "observations": "62 (pág. 12)",
+      "country": "TAIWÁN – TERRITORIO CHINO DE TAIWAN",
       "code": "TWN",
-      "capital": "TAIPEIC/V",
-      "tourist": "o AVE",
+      "capital": "TAIPEI",
+      "tourist": "C/V o AVE",
       "diplomatic": "",
       "official": "",
       "continent": "ASIA",
       "nationality": "CHINA",
       "observationIds": [
-        "62"
+        "62 (pág. 12)"
       ]
     },
     {
@@ -2598,6 +2601,20 @@
       "continent": "ÁFRICA",
       "nationality": "ZIMBABWENSE",
       "observationIds": []
+    },
+    {
+      "observations": "X",
+      "country": "REPÚBLICA MOLDAVA NISTRINA",
+      "code": "",
+      "capital": "",
+      "tourist": "",
+      "diplomatic": "",
+      "official": "",
+      "continent": "",
+      "nationality": "",
+      "observationIds": [
+        "X"
+      ]
     }
   ],
   "observations": {
@@ -2688,6 +2705,10 @@
     "59’": "QATAR\n“El presente Acuerdo se refiere a los siguientes pasaportes:\n1.   En el caso de la República Argentina: pasaportes diplomáticos y oficiales válidos.\n2.   En el caso del Estado de Qatar: pasaportes diplomáticos y especiales válidos” (Artículo. 1).\n“Los nacionales de ambas Partes que sean titulares de los pasaportes especificados en el Artículo 1 del presente Acuerdo podrán entrar, permanecer, salir y cruzar la\nfrontera de la otra Parte a través de sus puertos legales abiertos al tránsito internacional, y permanecer en el territorio de dicha Parte sin visa por un plazo máximo de\nnoventa (90) días a partir de la fecha de su ingreso” (Artículo 2).\n“Los nacionales de ambas Partes que sean titulares de los pasaportes mencionados en el Artículo 1 del presente Acuerdo y sean miembros acreditados de Misiones\nDiplomáticas o Consulados en el territorio de la otra Parte, así como los integrantes de su familia que vivan con ellos y también sean titulares de los pasaportes\nindicados en el Artículo 1, estarán exentos de los requisitos de visado para ingresar, permanecer, transitar y salir del territorio del Estado receptor por un plazo de\nnoventa (90) días, durante el cual deberán completar su proceso de acreditación y solicitar el permiso de residencia a las autoridades competentes del Estado\nreceptor” (Artículo 3) (Artículos 1, 2, y 3 del “Acuerdo de Supresión de Visas para Titulares de Pasaportes Diplomáticos, Oficiales y Especiales entre el\nGobierno de la República Argentina y el Gobierno del Estado de Qatar”, hecho y firmado en Buenos Aires el 05/10/2018 el que entrará en vigor el 21 de\nfebrero de 2019).",
     "62’": "DOMINICA\n“Los nacionales de las Partes titulares de pasaportes diplomáticos y oficiales válidos serán eximidos de la obligación de obtener visas para entrar, salir y\npermanecer en el territorio de la otra Parte, cuando dicha permanencia o tránsito por ese territorio no exceda los noventa (90) días” (Artículo I del “Acuerdo entre la\nRepública Argentina y la Mancomunidad de Dominica sobre Supresión de Visas para Titulares de Pasaportes Diplomáticos y Oficiales”, firmado en Roseau el 20\nde mayo de 2019, que entró en vigor el 17 de noviembre de 2019).",
     "68’": "REPUBLICA DOMINICANA\nEstablécese mediante ME-2026-05575830-APN-DGMM#DNM (15/01/2026) que los ciudadanos extranjeros titulares de pasaportes ordinarios vigentes emitidos por\nlas naciones enumeradas a continuación (* REPUBLICA POPULAR CHINA * REPUBLICA DOMINICANA * REPUBLICA DE LA INDIA) y que posean\nResidencia Permanente vigente en los ESTADOS UNIDOS DE AMÉRICA (Green Card), podrán ingresar al Territorio Nacional en las categorías de “Turista” u\n“Hombre de Negocios” sin necesidad de tramitar visado consular ni Autorización de Viaje Electrónica (AVE).",
-    "70’": "INDIA\nEstablécese mediante ME-2026-05575830-APN-DGMM#DNM (15/01/2026) que los ciudadanos extranjeros titulares de pasaportes ordinarios vigentes emitidos por\nlas naciones enumeradas a continuación (* REPUBLICA POPULAR CHINA * REPUBLICA DOMINICANA * REPUBLICA DE LA INDIA) y que posean\nResidencia Permanente vigente en los ESTADOS UNIDOS DE AMÉRICA (Green Card), podrán ingresar al Territorio Nacional en las categorías de “Turista” u\n“Hombre de Negocios” sin necesidad de tramitar visado consular ni Autorización de Viaje Electrónica (AVE)."
+    "70’": "INDIA\nEstablécese mediante ME-2026-05575830-APN-DGMM#DNM (15/01/2026) que los ciudadanos extranjeros titulares de pasaportes ordinarios vigentes emitidos por\nlas naciones enumeradas a continuación (* REPUBLICA POPULAR CHINA * REPUBLICA DOMINICANA * REPUBLICA DE LA INDIA) y que posean\nResidencia Permanente vigente en los ESTADOS UNIDOS DE AMÉRICA (Green Card), podrán ingresar al Territorio Nacional en las categorías de “Turista” u\n“Hombre de Negocios” sin necesidad de tramitar visado consular ni Autorización de Viaje Electrónica (AVE).",
+    "62 (pág. 12)": "62 = CON \"CERTIFICADO DE VIAJE\" CON INFORMACIÓN DE ACUERDO A CT DIGAC 010504/2007 o Autorización Electronica de Viaje (AVE). (Fuente: pág. 12 del PDF; el número 62 se reutiliza para Dominica en pág. 29.)",
+    "*": "* = B.N.O. (\"BRITISH NATIONAL OVERSEAS\") NO REQUIERE VISA EN PASAPORTES COMUNES POR TURISMO, NEGOCIOS Y ARTÍSTICAS HASTA TREINTA (30) DÍAS.",
+    "**": "** = S.A.R. (\"SPECIAL ADMINISTRATIVE REGION\") (REGIÓN ADMINISTRATIVA ESPECIAL - R.A.E.) NO REQUIERE VISA EN PASAPORTES COMUNES POR TURISMO Y NEGOCIOS HASTA NOVENTA (90) DÍAS.",
+    "X": "X = Por nota del 6 de julio de 2001, el Ministerio de Relaciones Exteriores de Moldova, comunicó a todas las Representaciones Diplomáticas acreditadas ante su Gobierno que los líderes de la autoproclamada \"República Moldava Nistrina\" decidieron emitir, a partir del 1° de octubre de 2001 un \"Pasaporte Transnitrino\". Las autoridades de Moldova han solicitado que estos Pasaportes no sean aceptados en calidad de documentos oficiales, independientemente del fin de su utilización. En razón de lo expuesto, y en virtud de que la República Argentina no ha reconocido la existencia de la llamada \"República Moldava Nistrina\", la Dirección de Consejería Legal del Ministerio de Relaciones Exteriores, Comercio Internacional y Culto ha dictaminado que no corresponde el reconocimiento de los pasaportes emitidos por dicha entidad (Facsímil N° 498/2001 DIGAC - VISAS del 17/08/2001)."
   }
 }
