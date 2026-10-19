@@ -82,7 +82,7 @@ export default function GitHubPagesArrivals() {
                         {snapshot.lastFailedSyncAt && <span> · Último intento fallido: {time(snapshot.lastFailedSyncAt)}</span>}
                     </div>
                     {message && <p className="sync-message" role="alert">{message}</p>}
-                    <FlightTable flights={visible} onReset={() => { setSearch(""); setWindow("now"); }} filtered={!!search || window !== "now"} />
+                    <FlightTable flights={visible} onReset={() => { setSearch(""); setWindow("now"); }} filtered={!!search || window !== "now"} relative={window} />
                     <div className="board-summary">
                         <span><strong>{String(visible.length).padStart(2, "0")}</strong> vuelos en la ventana seleccionada</span>
                         <span>TERMINAL A <span className="summary-dot">·</span> Hora efectiva de llegada</span>
