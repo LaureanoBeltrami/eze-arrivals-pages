@@ -23,11 +23,11 @@ it.each([
 
 it("shows CONSULTE for TAMS CON even when normalized status is absent", () => {
     render(<FlightStatusBadge status={null} providerStatus="CON" />);
-    expect(screen.getByText("CONSULTE").className).toContain("status-unknown");
+    expect(screen.getByText("CONSULTE").className).toContain("status-consulte");
 });
 
 it("does not display ESTIMA when TAMS explicitly reports CON", () => {
     render(<FlightStatusBadge status="scheduled" providerStatus=" con " />);
-    expect(screen.getByText("CONSULTE")).not.toBeNull();
+    expect(screen.getByText("CONSULTE").className).toContain("status-consulte");
     expect(screen.queryByText("ESTIMA")).toBeNull();
 });
