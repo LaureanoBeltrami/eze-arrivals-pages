@@ -25,13 +25,8 @@ export const time = (value: string | null) =>
         : "—";
 /** ATA is used only after TAMS explicitly reports the ATE operational state. */
 export function displayedArrivalTime(
-    flight: Pick<
-        Flight,
-        | "provider_status"
-        | "actual_arrival_time"
-        | "estimated_arrival"
-        | "scheduled_arrival"
-    >,
+    flight: Pick<Flight, "estimated_arrival" | "scheduled_arrival"> &
+    Partial<Pick<Flight, "provider_status" | "actual_arrival_time">>,
 ): string | null {
     const actual = flight.provider_status === "ATE" ? flight.actual_arrival_time : null;
 
