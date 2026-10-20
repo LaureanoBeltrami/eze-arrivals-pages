@@ -64,10 +64,8 @@ export interface TimeWindow {
 
 /** Absolute milliseconds; ISO timestamps include their UTC offset. */
 export function getEffectiveArrivalTime(
-    flight: Pick<
-        Flight,
-        "provider_status" | "actual_arrival_time" | "estimated_arrival" | "scheduled_arrival"
-    >,
+    flight: Pick<Flight, "estimated_arrival" | "scheduled_arrival"> &
+    Partial<Pick<Flight, "provider_status" | "actual_arrival_time">>,
 ): number {
     const displayed = displayedArrivalTime(flight);
     return displayed ? Date.parse(displayed) : NaN;
@@ -87,7 +85,8 @@ export function getRelativeTimeWindow(
 
 /** Both endpoints are inclusive, including exactly "now". */
 export function isFlightWithinRelativeWindow(
-    flight: Pick<Flight, "provider_status" | "actual_arrival_time" | "estimated_arrival" | "scheduled_arrival">,
+    flight: Pick<Flight, "estimated_arrival" | "scheduled_arrival"> &
+    Partial<Pick<Flight, "provider_status" | "actual_arrival_time">>,
     window: TimeWindow | null,
 ): boolean {
     if (!window) return true;
