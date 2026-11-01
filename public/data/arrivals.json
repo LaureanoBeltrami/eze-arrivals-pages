@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulSyncAt": "2026-11-01T18:58:04.341Z",
-  "lastFlightChangeAt": "2026-11-01T18:58:04.341Z",
+  "lastSuccessfulSyncAt": "2026-11-01T22:42:37.725Z",
+  "lastFlightChangeAt": "2026-11-01T22:42:37.725Z",
   "lastFailedSyncAt": null,
   "syncFailed": false,
   "flights": [
@@ -93,7 +93,7 @@
       "tams_sap_pax": 177,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8676213",
@@ -214,36 +214,6 @@
       "status": "landed",
       "international": true,
       "last_provider_update": "2026-11-01T18:58:04.341Z"
-    },
-    {
-      "id": "EZE:8676234",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676234",
-      "flight_number": "AV0087",
-      "airline_name": "AVIANCA",
-      "airline_iata": "AV",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "BOG",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "CO",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T09:05:00.000Z",
-      "estimated_arrival": "2026-10-31T08:20:00.000Z",
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T08:11:00.000Z",
-      "aircraft_registration": "N800AV",
-      "terminal": "A",
-      "gate": null,
-      "stand": "14",
-      "tams_sap_pax": 279,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
     },
     {
       "id": "EZE:8676239",
@@ -513,7 +483,7 @@
       "tams_sap_pax": null,
       "status": "cancelled",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8676256",
@@ -543,7 +513,7 @@
       "tams_sap_pax": 266,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8676257",
@@ -573,7 +543,7 @@
       "tams_sap_pax": 150,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8676258",
@@ -693,7 +663,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8676294",
@@ -786,36 +756,6 @@
       "last_provider_update": "2026-11-01T06:56:04.336Z"
     },
     {
-      "id": "EZE:8676306",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676306",
-      "flight_number": "CM0454",
-      "airline_name": "COPA AIRLINES",
-      "airline_iata": "CM",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "PTY",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "PA",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T06:58:00.000Z",
-      "estimated_arrival": "2026-10-31T07:00:00.000Z",
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T07:04:00.000Z",
-      "aircraft_registration": "HP9909",
-      "terminal": "A",
-      "gate": null,
-      "stand": "10",
-      "tams_sap_pax": 165,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
       "id": "EZE:8676307",
       "provider": "tams",
       "provider_flight_id": "EZE:8676307",
@@ -876,36 +816,6 @@
       "last_provider_update": "2026-11-01T18:58:04.341Z"
     },
     {
-      "id": "EZE:8676313",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676313",
-      "flight_number": "AR1305",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "CON",
-      "origin_name": null,
-      "origin_airport_iata": "MIA",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "US",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T10:00:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": null,
-      "aircraft_registration": null,
-      "terminal": "A",
-      "gate": null,
-      "stand": null,
-      "tams_sap_pax": null,
-      "status": null,
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
       "id": "EZE:8676318",
       "provider": "tams",
       "provider_flight_id": "EZE:8676318",
@@ -931,36 +841,6 @@
       "gate": null,
       "stand": "16B",
       "tams_sap_pax": 165,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
-      "id": "EZE:8676319",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676319",
-      "flight_number": "AR1133",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "MAD",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "ES",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T10:20:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": "2026-10-31T09:45:00.000Z",
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T12:03:00.000Z",
-      "aircraft_registration": "LVFVI",
-      "terminal": "A",
-      "gate": null,
-      "stand": "12",
-      "tams_sap_pax": 266,
       "status": "landed",
       "international": true,
       "last_provider_update": "2026-11-01T06:56:04.336Z"
@@ -1056,66 +936,6 @@
       "last_provider_update": "2026-11-01T06:56:04.336Z"
     },
     {
-      "id": "EZE:8676362",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676362",
-      "flight_number": "QR8137",
-      "airline_name": "QATAR AIRWAYS",
-      "airline_iata": "QR",
-      "airline_icao": null,
-      "provider_status": "CAN",
-      "origin_name": null,
-      "origin_airport_iata": "GRU",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "BR",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T07:10:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": null,
-      "aircraft_registration": null,
-      "terminal": "TCA",
-      "gate": null,
-      "stand": null,
-      "tams_sap_pax": null,
-      "status": "cancelled",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
-      "id": "EZE:8676363",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8676363",
-      "flight_number": "AR1997",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "VCP",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "BR",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T08:10:00.000Z",
-      "estimated_arrival": "2026-10-31T07:52:00.000Z",
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T07:53:00.000Z",
-      "aircraft_registration": "LVCTC",
-      "terminal": "TCA",
-      "gate": null,
-      "stand": "M11",
-      "tams_sap_pax": 0,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
       "id": "EZE:8676367",
       "provider": "tams",
       "provider_flight_id": "EZE:8676367",
@@ -1173,7 +993,7 @@
       "tams_sap_pax": 163,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677525",
@@ -1203,7 +1023,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677529",
@@ -1233,7 +1053,7 @@
       "tams_sap_pax": 174,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677530",
@@ -1263,7 +1083,7 @@
       "tams_sap_pax": 172,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677532",
@@ -1293,7 +1113,7 @@
       "tams_sap_pax": 176,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677533",
@@ -1323,7 +1143,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677536",
@@ -1353,7 +1173,7 @@
       "tams_sap_pax": 168,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677537",
@@ -1383,7 +1203,7 @@
       "tams_sap_pax": 172,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677538",
@@ -1413,7 +1233,7 @@
       "tams_sap_pax": 160,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677539",
@@ -1443,7 +1263,7 @@
       "tams_sap_pax": 172,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677542",
@@ -1473,7 +1293,7 @@
       "tams_sap_pax": 219,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677544",
@@ -1483,7 +1303,7 @@
       "airline_name": "LEVEL",
       "airline_iata": "LL",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "DEM",
       "origin_name": null,
       "origin_airport_iata": "BCN",
       "origin_airport_icao": null,
@@ -1492,18 +1312,18 @@
       "origin_country_code": "ES",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-01T23:55:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-02T01:15:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
       "actual_arrival_time": null,
-      "aircraft_registration": null,
+      "aircraft_registration": "ECNRG",
       "terminal": "A",
       "gate": null,
-      "stand": null,
-      "tams_sap_pax": null,
-      "status": null,
+      "stand": "11",
+      "tams_sap_pax": 300,
+      "status": "delayed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677546",
@@ -1513,7 +1333,7 @@
       "airline_name": "AEROLINEAS ARGENTINAS",
       "airline_iata": "AR",
       "airline_icao": null,
-      "provider_status": "DEM",
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "PUJ",
       "origin_airport_icao": null,
@@ -1525,15 +1345,15 @@
       "estimated_arrival": "2026-11-01T19:55:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
+      "actual_arrival_time": "2026-11-01T19:56:00.000Z",
       "aircraft_registration": "LVKEJ",
       "terminal": "A",
       "gate": null,
-      "stand": "17A",
+      "stand": "15A",
       "tams_sap_pax": 157,
-      "status": "delayed",
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677561",
@@ -1543,7 +1363,7 @@
       "airline_name": "IBERIA",
       "airline_iata": "IB",
       "airline_icao": null,
-      "provider_status": "EST",
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "MAD",
       "origin_airport_icao": null,
@@ -1555,15 +1375,15 @@
       "estimated_arrival": "2026-11-01T20:46:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
+      "actual_arrival_time": "2026-11-01T20:54:00.000Z",
       "aircraft_registration": "ECMSY",
       "terminal": "A",
       "gate": null,
       "stand": "14",
       "tams_sap_pax": 210,
-      "status": null,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677567",
@@ -1593,7 +1413,7 @@
       "tams_sap_pax": 264,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677568",
@@ -1623,7 +1443,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677570",
@@ -1653,7 +1473,7 @@
       "tams_sap_pax": 221,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677571",
@@ -1683,7 +1503,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677572",
@@ -1713,7 +1533,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677573",
@@ -1743,7 +1563,7 @@
       "tams_sap_pax": 170,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677576",
@@ -1753,7 +1573,7 @@
       "airline_name": "LATAM CHILE",
       "airline_iata": "LA",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "CON",
       "origin_name": null,
       "origin_airport_iata": "SCL",
       "origin_airport_icao": null,
@@ -1773,7 +1593,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677577",
@@ -1803,7 +1623,7 @@
       "tams_sap_pax": 140,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677581",
@@ -1833,7 +1653,7 @@
       "tams_sap_pax": 297,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677588",
@@ -1863,7 +1683,7 @@
       "tams_sap_pax": null,
       "status": "cancelled",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677589",
@@ -1893,7 +1713,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677591",
@@ -1923,7 +1743,7 @@
       "tams_sap_pax": 165,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677592",
@@ -1933,7 +1753,7 @@
       "airline_name": "LATAM CHILE",
       "airline_iata": "LA",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "SCL",
       "origin_airport_icao": null,
@@ -1942,18 +1762,18 @@
       "origin_country_code": "CL",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-01T21:35:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-01T21:35:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
-      "aircraft_registration": "CCBEF",
+      "actual_arrival_time": "2026-11-01T21:31:00.000Z",
+      "aircraft_registration": "CCBEH",
       "terminal": "A",
       "gate": null,
-      "stand": null,
-      "tams_sap_pax": null,
-      "status": null,
+      "stand": "16A",
+      "tams_sap_pax": 220,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677594",
@@ -1983,7 +1803,7 @@
       "tams_sap_pax": 176,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677595",
@@ -2013,7 +1833,7 @@
       "tams_sap_pax": 173,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677596",
@@ -2043,7 +1863,7 @@
       "tams_sap_pax": 168,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677597",
@@ -2053,7 +1873,7 @@
       "airline_name": "JETSMART AIRLINES",
       "airline_iata": "WJ",
       "airline_icao": null,
-      "provider_status": "EST",
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "GIG",
       "origin_airport_icao": null,
@@ -2065,15 +1885,15 @@
       "estimated_arrival": "2026-11-01T19:18:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
+      "actual_arrival_time": "2026-11-01T19:11:00.000Z",
       "aircraft_registration": "CCAWW",
       "terminal": "A",
       "gate": null,
       "stand": "50A",
       "tams_sap_pax": 211,
-      "status": null,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677605",
@@ -2103,7 +1923,7 @@
       "tams_sap_pax": 176,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677606",
@@ -2113,7 +1933,7 @@
       "airline_name": "SKY AIRLINE",
       "airline_iata": "H2",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "SSA",
       "origin_airport_icao": null,
@@ -2122,18 +1942,18 @@
       "origin_country_code": "BR",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-01T21:10:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-01T21:06:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
-      "aircraft_registration": null,
+      "actual_arrival_time": "2026-11-01T21:03:00.000Z",
+      "aircraft_registration": "CCDBH",
       "terminal": "A",
       "gate": null,
-      "stand": null,
-      "tams_sap_pax": null,
-      "status": null,
+      "stand": "02",
+      "tams_sap_pax": 173,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677607",
@@ -2163,7 +1983,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677608",
@@ -2193,7 +2013,7 @@
       "tams_sap_pax": 154,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677613",
@@ -2223,7 +2043,7 @@
       "tams_sap_pax": 264,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677619",
@@ -2263,7 +2083,7 @@
       "airline_name": "AEROLINEAS ARGENTINAS",
       "airline_iata": "AR",
       "airline_icao": null,
-      "provider_status": "EST",
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "AUA",
       "origin_airport_icao": null,
@@ -2275,15 +2095,15 @@
       "estimated_arrival": "2026-11-01T21:45:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
+      "actual_arrival_time": "2026-11-01T21:49:00.000Z",
       "aircraft_registration": "LVKNR",
       "terminal": "A",
       "gate": null,
       "stand": "17B",
       "tams_sap_pax": 154,
-      "status": null,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677644",
@@ -2313,7 +2133,7 @@
       "tams_sap_pax": 179,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8677647",
@@ -2343,7 +2163,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678844",
@@ -2373,7 +2193,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678849",
@@ -2403,7 +2223,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678850",
@@ -2433,7 +2253,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678855",
@@ -2463,7 +2283,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678856",
@@ -2493,7 +2313,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678859",
@@ -2523,7 +2343,67 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8678878",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8678878",
+      "flight_number": "IB0107",
+      "airline_name": "IBERIA",
+      "airline_iata": "IB",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "MAD",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "ES",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T21:50:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": null,
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8678886",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8678886",
+      "flight_number": "JJ8022",
+      "airline_name": "LATAM BRASIL",
+      "airline_iata": "JJ",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "GRU",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "BR",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T19:15:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": "PTMXL",
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678887",
@@ -2553,7 +2433,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678888",
@@ -2583,7 +2463,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678889",
@@ -2613,7 +2493,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678890",
@@ -2643,7 +2523,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678892",
@@ -2673,7 +2553,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678894",
@@ -2703,7 +2583,37 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8678898",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8678898",
+      "flight_number": "LA0476",
+      "airline_name": "LATAM CHILE",
+      "airline_iata": "LA",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "SCL",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "CL",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T21:45:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": null,
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678899",
@@ -2733,7 +2643,37 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8678909",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8678909",
+      "flight_number": "LA477",
+      "airline_name": "LATAM CHILE",
+      "airline_iata": "LA",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "SCL",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "CL",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T21:35:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": "CCBEH",
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678911",
@@ -2763,7 +2703,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678916",
@@ -2793,7 +2733,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678917",
@@ -2816,14 +2756,14 @@
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
       "actual_arrival_time": null,
-      "aircraft_registration": "PRXBR",
+      "aircraft_registration": "PRMHQ",
       "terminal": "A",
       "gate": null,
       "stand": null,
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678922",
@@ -2833,7 +2773,7 @@
       "airline_name": "AEROLINEAS ARGENTINAS",
       "airline_iata": "AR",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "EST",
       "origin_name": null,
       "origin_airport_iata": "FCO",
       "origin_airport_icao": null,
@@ -2842,7 +2782,7 @@
       "origin_country_code": "IT",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-02T10:10:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-02T09:37:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
       "actual_arrival_time": null,
@@ -2853,7 +2793,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678948",
@@ -2883,7 +2823,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8678950",
@@ -2913,7 +2853,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680489",
@@ -2943,7 +2883,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680492",
@@ -2973,7 +2913,67 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8680493",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8680493",
+      "flight_number": "AR1305",
+      "airline_name": "AEROLINEAS ARGENTINAS",
+      "airline_iata": "AR",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "MIA",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "US",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T22:15:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": null,
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8680495",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8680495",
+      "flight_number": "AR1135",
+      "airline_name": "AEROLINEAS ARGENTINAS",
+      "airline_iata": "AR",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "MAD",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "ES",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T22:00:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": "LVGHQ",
+      "terminal": "A",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680498",
@@ -3003,7 +3003,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680499",
@@ -3033,7 +3033,7 @@
       "tams_sap_pax": 266,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680500",
@@ -3063,7 +3063,7 @@
       "tams_sap_pax": 264,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680501",
@@ -3093,7 +3093,7 @@
       "tams_sap_pax": null,
       "status": "delayed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680503",
@@ -3123,7 +3123,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680504",
@@ -3133,7 +3133,7 @@
       "airline_name": "AEROLINEAS ARGENTINAS",
       "airline_iata": "AR",
       "airline_icao": null,
-      "provider_status": "EST",
+      "provider_status": "ATE",
       "origin_name": null,
       "origin_airport_iata": "MAD",
       "origin_airport_icao": null,
@@ -3145,15 +3145,15 @@
       "estimated_arrival": "2026-11-01T21:01:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
-      "actual_arrival_time": null,
+      "actual_arrival_time": "2026-11-01T21:09:00.000Z",
       "aircraft_registration": "LVGKO",
       "terminal": "A",
       "gate": null,
       "stand": "08",
       "tams_sap_pax": 265,
-      "status": null,
+      "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680505",
@@ -3163,7 +3163,7 @@
       "airline_name": "AEROLINEAS ARGENTINAS",
       "airline_iata": "AR",
       "airline_icao": null,
-      "provider_status": null,
+      "provider_status": "CON",
       "origin_name": null,
       "origin_airport_iata": "AUA",
       "origin_airport_icao": null,
@@ -3183,7 +3183,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680508",
@@ -3213,7 +3213,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8680510",
@@ -3276,36 +3276,6 @@
       "last_provider_update": "2026-11-01T18:58:04.341Z"
     },
     {
-      "id": "EZE:8680514",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8680514",
-      "flight_number": "AR1303",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "MIA",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "US",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T07:30:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": "2026-10-31T13:05:00.000Z",
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T13:20:00.000Z",
-      "aircraft_registration": "LVKAO",
-      "terminal": "A",
-      "gate": null,
-      "stand": "14",
-      "tams_sap_pax": 267,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
       "id": "EZE:8680515",
       "provider": "tams",
       "provider_flight_id": "EZE:8680515",
@@ -3333,37 +3303,7 @@
       "tams_sap_pax": 265,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
-    },
-    {
-      "id": "EZE:8680517",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8680517",
-      "flight_number": "AR1133",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "CON",
-      "origin_name": null,
-      "origin_airport_iata": "MAD",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "ES",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T07:10:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": "2026-10-31T09:45:00.000Z",
-      "actual_landing_time": null,
-      "actual_arrival_time": null,
-      "aircraft_registration": null,
-      "terminal": "A",
-      "gate": null,
-      "stand": null,
-      "tams_sap_pax": 266,
-      "status": null,
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8681111",
@@ -3373,7 +3313,7 @@
       "airline_name": "VUELOS PRIVADOS",
       "airline_iata": null,
       "airline_icao": "PRV",
-      "provider_status": "HOR",
+      "provider_status": "EST",
       "origin_name": null,
       "origin_airport_iata": "TRU",
       "origin_airport_icao": null,
@@ -3382,7 +3322,7 @@
       "origin_country_code": "PE",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-02T00:45:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-01T23:55:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
       "actual_arrival_time": null,
@@ -3391,9 +3331,9 @@
       "gate": null,
       "stand": "42",
       "tams_sap_pax": 2,
-      "status": "scheduled",
+      "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8682142",
@@ -3423,7 +3363,37 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8682144",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8682144",
+      "flight_number": "QT4093",
+      "airline_name": "TAMPA",
+      "airline_iata": "QT",
+      "airline_icao": null,
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "MIA",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "US",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T21:24:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": null,
+      "terminal": "TCA",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": null,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8682145",
@@ -3453,7 +3423,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8682714",
@@ -3493,7 +3463,7 @@
       "airline_name": "VUELOS PRIVADOS",
       "airline_iata": null,
       "airline_icao": "PRV",
-      "provider_status": "EST",
+      "provider_status": "DEM",
       "origin_name": null,
       "origin_airport_iata": "OLA",
       "origin_airport_icao": null,
@@ -3502,8 +3472,8 @@
       "origin_country_code": "NO",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-02T18:30:00.000Z",
-      "estimated_arrival": "2026-11-02T18:15:00.000Z",
-      "previous_estimated_arrival": null,
+      "estimated_arrival": "2026-11-02T20:30:00.000Z",
+      "previous_estimated_arrival": "2026-11-02T18:15:00.000Z",
       "actual_landing_time": null,
       "actual_arrival_time": null,
       "aircraft_registration": "PRGFT",
@@ -3511,9 +3481,9 @@
       "gate": null,
       "stand": null,
       "tams_sap_pax": 5,
-      "status": null,
+      "status": "delayed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8683936",
@@ -3546,36 +3516,6 @@
       "last_provider_update": "2026-11-01T18:58:04.341Z"
     },
     {
-      "id": "EZE:8684102",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8684102",
-      "flight_number": "PRVN18AA",
-      "airline_name": "VUELOS PRIVADOS",
-      "airline_iata": null,
-      "airline_icao": "PRV",
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "GYE",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "EC",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T04:40:00.000Z",
-      "estimated_arrival": "2026-10-31T07:30:00.000Z",
-      "previous_estimated_arrival": null,
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T07:08:00.000Z",
-      "aircraft_registration": "N18AA",
-      "terminal": "FBO",
-      "gate": null,
-      "stand": "44A",
-      "tams_sap_pax": 5,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
-    },
-    {
       "id": "EZE:8684286",
       "provider": "tams",
       "provider_flight_id": "EZE:8684286",
@@ -3603,7 +3543,7 @@
       "tams_sap_pax": 7,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685256",
@@ -3633,7 +3573,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685259",
@@ -3663,37 +3603,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
-    },
-    {
-      "id": "EZE:8685468",
-      "provider": "tams",
-      "provider_flight_id": "EZE:8685468",
-      "flight_number": "AR1141",
-      "airline_name": "AEROLINEAS ARGENTINAS",
-      "airline_iata": "AR",
-      "airline_icao": null,
-      "provider_status": "ATE",
-      "origin_name": null,
-      "origin_airport_iata": "FCO",
-      "origin_airport_icao": null,
-      "origin_city": null,
-      "origin_country": null,
-      "origin_country_code": "IT",
-      "destination_airport_iata": "EZE",
-      "scheduled_arrival": "2026-10-31T10:10:00.000Z",
-      "estimated_arrival": null,
-      "previous_estimated_arrival": "2026-10-31T09:50:00.000Z",
-      "actual_landing_time": null,
-      "actual_arrival_time": "2026-10-31T12:20:00.000Z",
-      "aircraft_registration": "LVKHU",
-      "terminal": "A",
-      "gate": null,
-      "stand": "08",
-      "tams_sap_pax": 265,
-      "status": "landed",
-      "international": true,
-      "last_provider_update": "2026-11-01T06:56:04.336Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685589",
@@ -3723,7 +3633,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685592",
@@ -3753,7 +3663,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685595",
@@ -3783,7 +3693,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685604",
@@ -3813,7 +3723,7 @@
       "tams_sap_pax": 168,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8685706",
@@ -3873,7 +3783,7 @@
       "tams_sap_pax": 12,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8686666",
@@ -3903,7 +3813,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8686669",
@@ -3933,7 +3843,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8686675",
@@ -3993,7 +3903,37 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8686990",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8686990",
+      "flight_number": "PRVCOLH",
+      "airline_name": "VUELOS PRIVADOS",
+      "airline_iata": null,
+      "airline_icao": "PRV",
+      "provider_status": "HOR",
+      "origin_name": null,
+      "origin_airport_iata": "MVD",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "UY",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-02T19:00:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": "ECOLH",
+      "terminal": "FBO",
+      "gate": null,
+      "stand": null,
+      "tams_sap_pax": 2,
+      "status": "scheduled",
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8687038",
@@ -4023,7 +3963,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8687089",
@@ -4053,7 +3993,7 @@
       "tams_sap_pax": 222,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8687166",
@@ -4083,7 +4023,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8687178",
@@ -4113,7 +4053,7 @@
       "tams_sap_pax": 168,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688099",
@@ -4132,7 +4072,7 @@
       "origin_country_code": "ES",
       "destination_airport_iata": "EZE",
       "scheduled_arrival": "2026-11-02T07:10:00.000Z",
-      "estimated_arrival": null,
+      "estimated_arrival": "2026-11-02T10:10:00.000Z",
       "previous_estimated_arrival": null,
       "actual_landing_time": null,
       "actual_arrival_time": null,
@@ -4143,7 +4083,7 @@
       "tams_sap_pax": null,
       "status": "delayed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688101",
@@ -4173,7 +4113,7 @@
       "tams_sap_pax": null,
       "status": "delayed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688114",
@@ -4203,7 +4143,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688115",
@@ -4233,7 +4173,7 @@
       "tams_sap_pax": null,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688167",
@@ -4263,7 +4203,7 @@
       "tams_sap_pax": null,
       "status": "landed",
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     },
     {
       "id": "EZE:8688200",
@@ -4293,7 +4233,37 @@
       "tams_sap_pax": 7,
       "status": null,
       "international": true,
-      "last_provider_update": "2026-11-01T18:58:04.341Z"
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
+    },
+    {
+      "id": "EZE:8688258",
+      "provider": "tams",
+      "provider_flight_id": "EZE:8688258",
+      "flight_number": "PRV404NA",
+      "airline_name": "VUELOS PRIVADOS",
+      "airline_iata": null,
+      "airline_icao": "PRV",
+      "provider_status": null,
+      "origin_name": null,
+      "origin_airport_iata": "PDP",
+      "origin_airport_icao": null,
+      "origin_city": null,
+      "origin_country": null,
+      "origin_country_code": "UY",
+      "destination_airport_iata": "EZE",
+      "scheduled_arrival": "2026-11-01T23:00:00.000Z",
+      "estimated_arrival": null,
+      "previous_estimated_arrival": null,
+      "actual_landing_time": null,
+      "actual_arrival_time": null,
+      "aircraft_registration": "N404NA",
+      "terminal": "FBO",
+      "gate": null,
+      "stand": "37",
+      "tams_sap_pax": 0,
+      "status": null,
+      "international": true,
+      "last_provider_update": "2026-11-01T22:42:37.725Z"
     }
   ]
 }
